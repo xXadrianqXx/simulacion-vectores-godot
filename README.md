@@ -1,7 +1,7 @@
 
 # 📐Simulación de Movimiento con Vectores en Godot
 
-Un proyecto educativo que demuestra la aplicación de vectores, MRU y geometría en el desarrollo de videojuegos.
+> Un proyecto educativo que demuestra la aplicación de vectores, MRU y geometría en el desarrollo de videojuegos.
 
 ---
 
