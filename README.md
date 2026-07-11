@@ -70,8 +70,9 @@ assets/colisiones.png
 │
 ├── 📁 Codigo-Fuente/                       
 │   ├── project.godot
-│   ├── 📁 scenes/
-│   └── 📁 scripts/
+│   ├── 📁 Animation/
+│   ├── 📁 Map/
+│   └── 📁 UI/
 │
 ├── 📁 Documentacion/                       
 │   ├── Manual-Tecnico.pdf                 ← Apuntes (el que tiene las apuntes manuales.)
@@ -134,7 +135,7 @@ Puedes usarlo, modificarlo y distribuirlo libremente, siempre que se mencione al
 
 ---
 
-El código muestra qué hice. La documentación muestra por qué lo hice."
+El código muestra qué hice. La documentación muestra por qué lo hice.
 
 ¡Gracias por visitar mi proyecto!
 
