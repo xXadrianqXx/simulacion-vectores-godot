@@ -1,4 +1,3 @@
----
 
 **📐 Simulación de Movimiento con Vectores en Godot**
 
