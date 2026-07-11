@@ -1,0 +1,84 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://csk1x78tedagb"]
+
+[ext_resource type="Texture2D" uid="uid://xjfp6at6q28b" path="res://Animation/Assault-Class.png" id="1_n42vp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w225d"]
+atlas = ExtResource("1_n42vp")
+region = Rect2(0, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrkj3"]
+atlas = ExtResource("1_n42vp")
+region = Rect2(16, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u36h4"]
+atlas = ExtResource("1_n42vp")
+region = Rect2(32, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_65hnj"]
+atlas = ExtResource("1_n42vp")
+region = Rect2(48, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5u52j"]
+atlas = ExtResource("1_n42vp")
+region = Rect2(64, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4mp8"]
+atlas = ExtResource("1_n42vp")
+region = Rect2(0, 0, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6na6x"]
+atlas = ExtResource("1_n42vp")
+region = Rect2(16, 0, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3fvj"]
+atlas = ExtResource("1_n42vp")
+region = Rect2(0, 18, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gsetv"]
+atlas = ExtResource("1_n42vp")
+region = Rect2(16, 18, 16, 18)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w225d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrkj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u36h4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_65hnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5u52j")
+}],
+"loop": 0,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4mp8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6na6x")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3fvj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gsetv")
+}],
+"loop": 0,
+"name": &"run",
+"speed": 5.0
+}]

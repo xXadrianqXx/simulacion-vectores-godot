@@ -1,0 +1,22 @@
+[gd_resource type="Theme" format=3 uid="uid://devh5rrg5pbuj"]
+
+[ext_resource type="FontFile" uid="uid://hrtaia6sh3ka" path="res://UI/kenney_input_keyboard_&_mouse.otf" id="1_051uh"]
+[ext_resource type="FontFile" uid="uid://7fusbigakxcj" path="res://UI/kenney_input_keyboard_&_mouse.ttf" id="2_j4afq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pd5e5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6030f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_051uh"]
+
+[resource]
+default_font = ExtResource("2_j4afq")
+default_font_size = 80
+Button/colors/font_color = Color(0.35281947, 0.5290825, 0.32190326, 1)
+Button/font_sizes/font_size = 104
+Button/fonts/font = ExtResource("1_051uh")
+Button/styles/disabled = SubResource("StyleBoxEmpty_pd5e5")
+Button/styles/focus = null
+Button/styles/hover = null
+Button/styles/normal = SubResource("StyleBoxEmpty_6030f")
+Button/styles/pressed = SubResource("StyleBoxEmpty_051uh")

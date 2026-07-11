@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cxtr12jbsqj67"]
+
+[ext_resource type="PackedScene" uid="uid://jru8166ksqhe" path="res://RobotScene.tscn" id="1_3mqji"]
+[ext_resource type="Script" uid="uid://dihmragrbeer5" path="res://MainScript.gd" id="1_uxrcv"]
+[ext_resource type="PackedScene" uid="uid://dswdy2itnsb26" path="res://MapScene.tscn" id="2_x4av3"]
+[ext_resource type="PackedScene" uid="uid://n8c6bsgnwm2t" path="res://EnemyScene.tscn" id="3_rpqi1"]
+
+[node name="Main" type="Node2D" unique_id=1347412009]
+script = ExtResource("1_uxrcv")
+enemigo_scena = ExtResource("3_rpqi1")
+
+[node name="Robot" parent="." unique_id=680944465 node_paths=PackedStringArray("vida") instance=ExtResource("1_3mqji")]
+collision_layer = 0
+collision_mask = 0
+vida = NodePath("../UI/ProgressBar")
+
+[node name="Camera2D" type="Camera2D" parent="Robot" unique_id=680923081]
+scale = Vector2(0.33333334, 0.33333334)
+limit_left = -1900
+limit_top = -1000
+limit_right = 2200
+limit_bottom = 1100
+
+[node name="Mapa" parent="." unique_id=114060034 instance=ExtResource("2_x4av3")]
+z_index = -1
+scale = Vector2(3, 3)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1079808434]
+
+[node name="ProgressBar" type="ProgressBar" parent="UI" unique_id=2004031655]
+offset_left = 28.0
+offset_top = 14.0
+offset_right = 253.0
+offset_bottom = 41.0
+value = 100.0
+
+[node name="Timer" type="Timer" parent="." unique_id=272351175]
+wait_time = 5.0

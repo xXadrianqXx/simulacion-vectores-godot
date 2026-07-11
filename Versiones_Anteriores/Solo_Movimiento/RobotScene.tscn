@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://jru8166ksqhe"]
+
+[ext_resource type="Script" uid="uid://g5n82okfr717" path="res://RobotScript.gd" id="1_t4mp8"]
+[ext_resource type="Texture2D" uid="uid://xjfp6at6q28b" path="res://Animation/Assault-Class.png" id="2_t4mp8"]
+[ext_resource type="PackedScene" uid="uid://cwumgwvh8o8ob" path="res://BalaScene.tscn" id="3_6na6x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t4mp8"]
+atlas = ExtResource("2_t4mp8")
+region = Rect2(0, 0, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6na6x"]
+atlas = ExtResource("2_t4mp8")
+region = Rect2(16, 0, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3fvj"]
+atlas = ExtResource("2_t4mp8")
+region = Rect2(0, 18, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gsetv"]
+atlas = ExtResource("2_t4mp8")
+region = Rect2(16, 18, 16, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w225d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t4mp8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6na6x")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3fvj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gsetv")
+}],
+"loop": false,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="Robot" type="CharacterBody2D" unique_id=680944465 node_paths=PackedStringArray("animacion_robot")]
+scale = Vector2(3, 3)
+collision_mask = 2
+script = ExtResource("1_t4mp8")
+animacion_robot = NodePath("AnimacionesRobot")
+Bala = ExtResource("3_6na6x")
+
+[node name="AnimacionesRobot" type="AnimatedSprite2D" parent="." unique_id=805948827]
+sprite_frames = SubResource("SpriteFrames_w225d")

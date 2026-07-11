@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://btqfgqjemk2bx"]
+
+[ext_resource type="Script" uid="uid://dxgdlku7hq4nt" path="res://RespawScene.gd" id="1_0sxvo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g7b7a"]
+font_size = 60
+outline_size = 9
+outline_color = Color(0.1968194, 0.1968194, 0.1968194, 1)
+shadow_size = 8
+shadow_color = Color(0, 0, 0, 1)
+stacked_outline_count = 1
+stacked_shadow_count = 1
+stacked_outline_0/size = 6
+stacked_shadow_0/outline_size = 11
+
+[sub_resource type="Animation" id="Animation_0sxvo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4qed7"]
+resource_name = "end"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.099999994, 0.375, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0.02439022)]
+}
+
+[sub_resource type="Animation" id="Animation_y2kbw"]
+resource_name = "new"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.03333333, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cnhfo"]
+_data = {
+&"RESET": SubResource("Animation_0sxvo"),
+&"end": SubResource("Animation_4qed7"),
+&"new": SubResource("Animation_y2kbw")
+}
+
+[node name="RespawScene" type="Control" unique_id=1802436639]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0sxvo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1430878428]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.17030907, 0.16049036, 0.119376995, 1)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1049434297]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -84.5
+offset_bottom = 84.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Revivir en: "
+label_settings = SubResource("LabelSettings_g7b7a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="." unique_id=1666316152]
+wait_time = 10.0
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1578994244]
+libraries/ = SubResource("AnimationLibrary_cnhfo")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

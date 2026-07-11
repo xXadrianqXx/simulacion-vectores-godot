@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cwumgwvh8o8ob"]
+
+[ext_resource type="Script" uid="uid://n642j2ouejhd" path="res://BalaScript.gd" id="1_4iwxa"]
+[ext_resource type="Texture2D" uid="uid://csd2hiwqadvtj" path="res://Animation/bullets+plasma.png" id="1_sbtcu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4iwxa"]
+atlas = ExtResource("1_sbtcu")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0nu1"]
+atlas = ExtResource("1_sbtcu")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e80ri"]
+atlas = ExtResource("1_sbtcu")
+region = Rect2(16, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2dtkh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4iwxa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0nu1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e80ri")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Bala" type="Node2D" unique_id=1659455877]
+script = ExtResource("1_4iwxa")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1175329165]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_2dtkh")
+frame = 2
+frame_progress = 1.0
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1573018131]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

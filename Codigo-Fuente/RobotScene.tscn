@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://jru8166ksqhe"]
+
+[ext_resource type="Script" uid="uid://g5n82okfr717" path="res://RobotScript.gd" id="1_t4mp8"]
+[ext_resource type="PackedScene" uid="uid://cwumgwvh8o8ob" path="res://BalaScene.tscn" id="3_6na6x"]
+[ext_resource type="SpriteFrames" uid="uid://csk1x78tedagb" path="res://AnimacionPlayer.tres" id="3_g3fvj"]
+
+[node name="Robot" type="CharacterBody2D" unique_id=680944465 node_paths=PackedStringArray("animacion_robot")]
+scale = Vector2(3, 3)
+collision_mask = 2
+script = ExtResource("1_t4mp8")
+animacion_robot = NodePath("AnimacionesRobot")
+Bala = ExtResource("3_6na6x")
+
+[node name="AnimacionesRobot" type="AnimatedSprite2D" parent="." unique_id=805948827]
+sprite_frames = ExtResource("3_g3fvj")
+animation = &"dead"
+frame = 4
+frame_progress = 1.0
+
+[node name="HealingTime" type="Timer" parent="." unique_id=374094673]
+wait_time = 4.0
+one_shot = true
+
+[connection signal="animation_finished" from="AnimacionesRobot" to="." method="_on_animaciones_robot_animation_finished"]
+[connection signal="timeout" from="HealingTime" to="." method="_on_healing_time_timeout"]

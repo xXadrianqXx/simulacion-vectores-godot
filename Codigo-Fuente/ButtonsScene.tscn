@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://3stvvdr43dy1"]
+
+[ext_resource type="Texture2D" uid="uid://c0r76p8nd636u" path="res://UI/keyboard_arrow_down_outline.svg" id="1_dhebw"]
+[ext_resource type="Texture2D" uid="uid://dl473jw2pavdb" path="res://UI/keyboard_arrow_down.svg" id="2_0onha"]
+[ext_resource type="Texture2D" uid="uid://d3ou21qh4s6yi" path="res://UI/keyboard_arrow_up_outline.svg" id="2_jmrib"]
+[ext_resource type="Texture2D" uid="uid://btj6d5mp7gubu" path="res://UI/keyboard_arrow_left_outline.svg" id="3_3k826"]
+[ext_resource type="Texture2D" uid="uid://jgqqv4maqkd3" path="res://UI/keyboard_arrow_up.svg" id="3_wapgx"]
+[ext_resource type="Texture2D" uid="uid://bfe51qjolsrfg" path="res://UI/keyboard_arrow_left.svg" id="4_g4ed2"]
+[ext_resource type="Texture2D" uid="uid://dfej2stfeb11o" path="res://UI/keyboard_arrow_right_outline.svg" id="5_w32r6"]
+[ext_resource type="Texture2D" uid="uid://qfio61qor1l8" path="res://UI/keyboard_arrow_right.svg" id="6_v731c"]
+[ext_resource type="Texture2D" uid="uid://c6yotjy5yfiqb" path="res://UI/keyboard_shift_icon_outline.svg" id="9_0onha"]
+[ext_resource type="Texture2D" uid="uid://cc4wetk6m4okr" path="res://UI/keyboard_shift_icon.svg" id="10_3k826"]
+
+[node name="Buttons" type="Control" unique_id=442637463]
+custom_minimum_size = Vector2(20, 400)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="." unique_id=15846483]
+position = Vector2(272, 208)
+scale = Vector2(2, 2.1)
+texture_normal = ExtResource("1_dhebw")
+texture_pressed = ExtResource("2_0onha")
+action = "mover_abajo"
+
+[node name="TouchScreenButton5" type="TouchScreenButton" parent="." unique_id=729725058]
+position = Vector2(116, 90.000015)
+scale = Vector2(2, 2.1)
+texture_normal = ExtResource("3_3k826")
+texture_pressed = ExtResource("4_g4ed2")
+action = "mover_izquierda"
+
+[node name="TouchScreenButton6" type="TouchScreenButton" parent="." unique_id=1759334280]
+position = Vector2(437, 90)
+scale = Vector2(2, 2.1)
+texture_normal = ExtResource("5_w32r6")
+texture_pressed = ExtResource("6_v731c")
+action = "mover_derecha"
+
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="." unique_id=767304204]
+position = Vector2(272, -48)
+scale = Vector2(2, 2.098)
+texture_normal = ExtResource("2_jmrib")
+texture_pressed = ExtResource("3_wapgx")
+action = "mover_arriba"
+
+[node name="BoxContainer" type="BoxContainer" parent="." unique_id=1964807468]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="TouchScreenButton7" type="TouchScreenButton" parent="BoxContainer" unique_id=1679555165]
+position = Vector2(-300, -200)
+scale = Vector2(4, 4.196)
+texture_normal = ExtResource("9_0onha")
+texture_pressed = ExtResource("10_3k826")
+action = "ataque"

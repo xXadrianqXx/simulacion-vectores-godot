@@ -1,0 +1,277 @@
+[gd_scene format=3 uid="uid://cxtr12jbsqj67"]
+
+[ext_resource type="PackedScene" uid="uid://jru8166ksqhe" path="res://RobotScene.tscn" id="1_3mqji"]
+[ext_resource type="Script" uid="uid://dihmragrbeer5" path="res://MainScript.gd" id="1_uxrcv"]
+[ext_resource type="PackedScene" uid="uid://dswdy2itnsb26" path="res://MapScene.tscn" id="2_x4av3"]
+[ext_resource type="PackedScene" uid="uid://btqfgqjemk2bx" path="res://RespawnScene.tscn" id="3_a814b"]
+[ext_resource type="PackedScene" uid="uid://n8c6bsgnwm2t" path="res://EnemyScene.tscn" id="3_rpqi1"]
+[ext_resource type="PackedScene" uid="uid://3stvvdr43dy1" path="res://ButtonsScene.tscn" id="5_rf2cd"]
+[ext_resource type="FontFile" uid="uid://7fusbigakxcj" path="res://UI/kenney_input_keyboard_&_mouse.ttf" id="6_5crlr"]
+[ext_resource type="FontFile" uid="uid://hrtaia6sh3ka" path="res://UI/kenney_input_keyboard_&_mouse.otf" id="8_hbc2u"]
+[ext_resource type="LabelSettings" uid="uid://de24j46ovxls3" path="res://UI/new_label_settings.tres" id="9_torvr"]
+[ext_resource type="Theme" uid="uid://devh5rrg5pbuj" path="res://Boton.tres" id="10_8xkvn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hbc2u"]
+bg_color = Color(0.10980392, 0.10980392, 0.10980392, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.43137255, 0.12156863, 0.12156863, 1)
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5crlr"]
+bg_color = Color(0.21176448, 0.19875552, 0.5662579, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3435632, 0.15452826, 0.11667799, 1)
+corner_detail = 20
+shadow_color = Color(0.44049507, 0.43596393, 0.3773162, 0.9843137)
+
+[sub_resource type="Theme" id="Theme_g7b7a"]
+default_font = ExtResource("6_5crlr")
+default_font_size = 30
+ProgressBar/colors/font_color = Color(5.498022, 7.801662, 6.047224, 1)
+ProgressBar/colors/font_outline_color = Color(0.37756655, 0.11988961, 0.10675163, 1)
+ProgressBar/fonts/font = ExtResource("6_5crlr")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_hbc2u")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_5crlr")
+
+[sub_resource type="LabelSettings" id="LabelSettings_hbc2u"]
+font = ExtResource("6_5crlr")
+font_size = 25
+outline_size = 5
+outline_color = Color(0.25226083, 0.10901847, 0.2838537, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8xkvn"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.25408742, 0.25408742, 0.25408742, 1)
+corner_detail = 20
+shadow_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p5x2j"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.18039216, 0, 0.34901962, 1)
+shadow_size = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_torvr"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0.8, 0.8, 1)
+shadow_color = Color(0, 0, 0, 0)
+
+[sub_resource type="Theme" id="Theme_torvr"]
+default_font = ExtResource("6_5crlr")
+default_font_size = 80
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 104
+Button/fonts/font = ExtResource("8_hbc2u")
+Button/styles/disabled = SubResource("StyleBoxFlat_8xkvn")
+Button/styles/focus = null
+Button/styles/hover = null
+Button/styles/normal = SubResource("StyleBoxFlat_p5x2j")
+Button/styles/pressed = SubResource("StyleBoxFlat_torvr")
+
+[node name="Main" type="Node2D" unique_id=1347412009 node_paths=PackedStringArray("score_label")]
+script = ExtResource("1_uxrcv")
+enemigo_scena = ExtResource("3_rpqi1")
+score_label = NodePath("UI/LabelScore")
+
+[node name="Mapa" parent="." unique_id=114060034 instance=ExtResource("2_x4av3")]
+position = Vector2(0, 0)
+scale = Vector2(3, 3)
+
+[node name="Robot" parent="." unique_id=680944465 node_paths=PackedStringArray("respawn", "vida") instance=ExtResource("1_3mqji")]
+collision_layer = 0
+collision_mask = 0
+respawn = NodePath("../Respawn")
+vida = NodePath("../UI/ProgressBar")
+
+[node name="Camera2D" type="Camera2D" parent="Robot" unique_id=680923081]
+scale = Vector2(0.33333334, 0.33333334)
+zoom = Vector2(1.5, 1.5)
+limit_left = -1900
+limit_top = -1000
+limit_right = 2200
+limit_bottom = 1100
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1079808434]
+
+[node name="ProgressBar" type="ProgressBar" parent="UI" unique_id=536717389]
+clip_contents = true
+offset_left = 28.0
+offset_top = 14.0
+offset_right = 253.0
+offset_bottom = 41.0
+scale = Vector2(2, 2)
+theme = SubResource("Theme_g7b7a")
+value = 100.0
+
+[node name="Buttons" parent="UI" unique_id=442637463 instance=ExtResource("5_rf2cd")]
+
+[node name="LabelScore" type="Label" parent="UI" unique_id=1770515956]
+anchors_preset = -1
+anchor_left = 0.88000005
+anchor_right = 0.88000005
+offset_left = -113.76007
+offset_top = 1.0
+offset_right = -73.76007
+offset_bottom = 24.0
+grow_horizontal = 0
+scale = Vector2(3, 3)
+label_settings = SubResource("LabelSettings_hbc2u")
+
+[node name="Pause" type="Button" parent="UI" unique_id=2009516203]
+custom_minimum_size = Vector2(300, 0)
+custom_maximum_size = Vector2(200, -1)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 15.0
+offset_right = 100.0
+offset_bottom = 137.0
+grow_horizontal = 2
+theme = SubResource("Theme_torvr")
+text = "||"
+
+[node name="RespawScene" parent="UI" unique_id=1802436639 instance=ExtResource("3_a814b")]
+visible = false
+
+[node name="Timer" type="Timer" parent="." unique_id=272351175]
+wait_time = 5.0
+
+[node name="Respawn" type="Marker2D" parent="." unique_id=2050760118]
+
+[node name="PausedUI" type="CanvasLayer" parent="." unique_id=933582893]
+process_mode = 3
+visible = false
+
+[node name="IU" type="Control" parent="PausedUI" unique_id=581684160]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="PausedUI/IU" unique_id=2058229425]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.27058825, 0, 0.2784314, 0.14509805)
+
+[node name="ColorRect2" type="ColorRect" parent="PausedUI/IU/ColorRect" unique_id=1999171375]
+custom_minimum_size = Vector2(2050, 150)
+custom_maximum_size = Vector2(2050, 1050)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -525.0
+offset_top = -1025.0
+offset_right = 525.0
+offset_bottom = 1025.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0004326653, 0.0004326653, 9.320973e-05, 1)
+
+[node name="ColorRect" type="ColorRect" parent="PausedUI/IU/ColorRect" unique_id=1729252675]
+custom_minimum_size = Vector2(2000, 1000)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.25244036, 0.16931286, 0.16817352, 1)
+
+[node name="PauseLabel" type="Label" parent="PausedUI/IU/ColorRect/ColorRect" unique_id=1394950895]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -327.0
+offset_right = 327.0
+offset_bottom = 200.0
+grow_horizontal = 2
+text = "--Paused--"
+label_settings = ExtResource("9_torvr")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PausedUI/IU/ColorRect/ColorRect" unique_id=1621940169]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -750.0
+offset_top = -55.5
+offset_right = 750.0
+offset_bottom = 55.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="ButtonResume" type="Button" parent="PausedUI/IU/ColorRect/ColorRect/VBoxContainer" unique_id=212061360]
+custom_minimum_size = Vector2(1500, 100)
+custom_maximum_size = Vector2(1500, 500)
+layout_mode = 2
+theme = ExtResource("10_8xkvn")
+theme_type_variation = &"FlatButton"
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 100
+text = "Reanuadar"
+
+[node name="ButtonReboot" type="Button" parent="PausedUI/IU/ColorRect/ColorRect/VBoxContainer" unique_id=1669718398]
+custom_minimum_size = Vector2(1500, 100)
+custom_maximum_size = Vector2(1500, 500)
+layout_mode = 2
+theme = ExtResource("10_8xkvn")
+theme_type_variation = &"FlatButton"
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 100
+text = "Reiniciar"
+
+[node name="ButtonExitToMainMenu" type="Button" parent="PausedUI/IU/ColorRect/ColorRect/VBoxContainer" unique_id=451515598]
+custom_minimum_size = Vector2(1500, 100)
+custom_maximum_size = Vector2(1500, 500)
+layout_mode = 2
+theme = ExtResource("10_8xkvn")
+theme_type_variation = &"FlatButton"
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 100
+text = "Menu Principal"
+
+[connection signal="reboot" from="Robot" to="." method="_on_robot_reboot"]
+[connection signal="pressed" from="UI/Pause" to="." method="_on_pause_pressed"]
+[connection signal="respawn" from="UI/RespawScene" to="." method="_on_respaw_scene_respawn"]
+[connection signal="pressed" from="PausedUI/IU/ColorRect/ColorRect/VBoxContainer/ButtonResume" to="." method="_on_button_resume_pressed"]
+[connection signal="pressed" from="PausedUI/IU/ColorRect/ColorRect/VBoxContainer/ButtonReboot" to="." method="_on_button_reboot_pressed"]
+[connection signal="pressed" from="PausedUI/IU/ColorRect/ColorRect/VBoxContainer/ButtonExitToMainMenu" to="." method="_on_button_exit_to_main_menu_pressed"]

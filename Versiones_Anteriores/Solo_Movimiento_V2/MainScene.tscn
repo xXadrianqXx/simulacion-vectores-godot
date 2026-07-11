@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://cxtr12jbsqj67"]
+
+[ext_resource type="PackedScene" uid="uid://jru8166ksqhe" path="res://RobotScene.tscn" id="1_3mqji"]
+[ext_resource type="Script" uid="uid://dihmragrbeer5" path="res://MainScript.gd" id="1_uxrcv"]
+[ext_resource type="PackedScene" uid="uid://dswdy2itnsb26" path="res://MapScene.tscn" id="2_x4av3"]
+[ext_resource type="PackedScene" uid="uid://btqfgqjemk2bx" path="res://RespawnScene.tscn" id="3_a814b"]
+[ext_resource type="PackedScene" uid="uid://n8c6bsgnwm2t" path="res://EnemyScene.tscn" id="3_rpqi1"]
+[ext_resource type="PackedScene" uid="uid://3stvvdr43dy1" path="res://ButtonsScene.tscn" id="5_rf2cd"]
+
+[node name="Main" type="Node2D" unique_id=1347412009 node_paths=PackedStringArray("score_label")]
+script = ExtResource("1_uxrcv")
+enemigo_scena = ExtResource("3_rpqi1")
+score_label = NodePath("UI/LabelScore")
+
+[node name="Mapa" parent="." unique_id=114060034 instance=ExtResource("2_x4av3")]
+scale = Vector2(3, 3)
+
+[node name="Robot" parent="." unique_id=680944465 node_paths=PackedStringArray("respawn", "vida") instance=ExtResource("1_3mqji")]
+collision_layer = 0
+collision_mask = 0
+respawn = NodePath("../Respawn")
+vida = NodePath("../UI/ProgressBar")
+
+[node name="Camera2D" type="Camera2D" parent="Robot" unique_id=680923081]
+scale = Vector2(0.33333334, 0.33333334)
+zoom = Vector2(1.5, 1.5)
+limit_left = -1900
+limit_top = -1000
+limit_right = 2200
+limit_bottom = 1100
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1079808434]
+
+[node name="ProgressBar" type="ProgressBar" parent="UI" unique_id=2004031655]
+offset_left = 28.0
+offset_top = 14.0
+offset_right = 253.0
+offset_bottom = 41.0
+scale = Vector2(2, 2)
+value = 100.0
+
+[node name="Buttons" parent="UI" unique_id=442637463 instance=ExtResource("5_rf2cd")]
+visible = false
+
+[node name="LabelScore" type="Label" parent="UI" unique_id=1770515956]
+anchors_preset = -1
+anchor_left = 0.88000005
+anchor_right = 0.88000005
+offset_left = -113.76007
+offset_top = 1.0
+offset_right = -73.76007
+offset_bottom = 24.0
+grow_horizontal = 0
+scale = Vector2(3, 3)
+
+[node name="RespawScene" parent="UI" unique_id=1802436639 instance=ExtResource("3_a814b")]
+visible = false
+
+[node name="Timer" type="Timer" parent="." unique_id=272351175]
+wait_time = 5.0
+
+[node name="Respawn" type="Marker2D" parent="." unique_id=2050760118]
+
+[connection signal="reboot" from="Robot" to="." method="_on_robot_reboot"]
+[connection signal="respawn" from="UI/RespawScene" to="." method="_on_respaw_scene_respawn"]
