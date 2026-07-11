@@ -102,6 +102,12 @@ assets/colisiones.png
 
 · Windows (.exe)
 · Android (.apk)
+## ⚠️ Advertencia de Windows
+
+Al ejecutar el juego, Windows puede mostrar un mensaje de seguridad. 
+Esto ocurre porque el ejecutable no está firmado digitalmente. 
+**Es seguro ejecutarlo.** Puedes hacer clic en **"Más información"** y luego en **"Ejecutar de todas formas"**.
+
 
 ---
 
