@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cxtr12jbsqj67"]
+
+[ext_resource type="PackedScene" uid="uid://jru8166ksqhe" path="res://RobotScene.tscn" id="1_3mqji"]
+[ext_resource type="PackedScene" uid="uid://dswdy2itnsb26" path="res://MapScene.tscn" id="2_x4av3"]
+[ext_resource type="PackedScene" uid="uid://n8c6bsgnwm2t" path="res://EnemyScene.tscn" id="3_rpqi1"]
+
+[node name="Main" type="Node2D" unique_id=1347412009]
+
+[node name="Robot" parent="." unique_id=680944465 instance=ExtResource("1_3mqji")]
+scale = Vector2(3, 3)
+collision_layer = 0
+collision_mask = 0
+mostrar_calculos = "Cuando se mueva"
+
+[node name="Camera2D" type="Camera2D" parent="Robot" unique_id=680923081]
+scale = Vector2(0.33333334, 0.33333334)
+limit_left = -1900
+limit_top = -1000
+limit_right = 2200
+limit_bottom = 1100
+
+[node name="Mapa" parent="." unique_id=114060034 instance=ExtResource("2_x4av3")]
+z_index = -1
+scale = Vector2(3, 3)
+
+[node name="Enemy" parent="." unique_id=580231489 instance=ExtResource("3_rpqi1")]
+position = Vector2(-45, -1)
+scale = Vector2(2, 2)
