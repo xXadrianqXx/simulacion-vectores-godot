@@ -136,7 +136,7 @@ Puedes usarlo, modificarlo y distribuirlo libremente, siempre que se mencione al
 
 El código muestra qué hice. La documentación muestra por qué lo hice."
 
-¡Gracias por visitar mi proyecto! 🚀
+¡Gracias por visitar mi proyecto!
 
 ---
 
