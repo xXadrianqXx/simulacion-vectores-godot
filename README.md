@@ -78,10 +78,8 @@ assets/colisiones.png
 │   └── Guia-Usuario.pdf                   
 │
 ├── 📁 Ejecutables/                        
-│   ├── 📁 Windows/
-│   │   └── Juego.exe
-│   └── 📁 Android/
-│       └── Juego.apk
+│    └── ProyectoFinalV1.zip
+│    └── ProyectoFinal.apk
 │
 ├── 📁 Versiones_Anteriores/               
 │   └── 📁 Solo-Movimiento/
