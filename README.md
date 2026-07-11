@@ -112,7 +112,7 @@ Esto ocurre porque el ejecutable no está firmado digitalmente.
 
 **📄 Documentación**
 
-· [TrabajoFormulasMRUyDirecciónNormalizada.pdf] (Documentacion/TrabajoFormulasMRUyDirecciónNormalizada.pdf)
+· [TrabajoFormulasMRUyDirecciónNormalizada.pdf] (Documentacion/TrabajoFormulasMRUyDirecciónNormalizada.pdf)[TrabajoFormulasMRUyDirecciónNormalizada.pdf](Documentacion/TrabajoFormulasMRUyDirecci%C3%B3nNormalizada.pdf)
 · Guía de Usuario (PDF)
 
 ---
