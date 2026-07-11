@@ -64,28 +64,29 @@ assets/colisiones.png
 **📂 Estructura del Proyecto**
 
 ```
-📁 Simulacion-Movimiento-Vectores/
+📁 Simulación-Movimiento-Vectores/       
 │
-├── 📁 Codigo-Fuente/           # Proyecto completo de Godot
+├── 📄 README.md                            
+│
+├── 📁 Codigo-Fuente/                       
 │   ├── project.godot
 │   ├── 📁 scenes/
-│   ├──📁 scripts/
-|   └─ 📁 scripts/
+│   └── 📁 scripts/
 │
-├── 📁 Ejecutables/             # Archivos listos para jugar
+├── 📁 Documentacion/                       
+│   ├── Manual-Tecnico.pdf                 ← Apuntes (el que tiene las apuntes manuales.)
+│   └── Guia-Usuario.pdf                   
+│
+├── 📁 Ejecutables/                        
 │   ├── 📁 Windows/
 │   │   └── Juego.exe
 │   └── 📁 Android/
 │       └── Juego.apk
 │
-├── 📁 Documentacion/           # Manuales y guías
-│   ├── Manual-Tecnico.pdf
-│   └── Guia-Usuario.pdf
+├── 📁 Versiones_Anteriores/               
+│   └── 📁 Solo-Movimiento/
 │
-├── 📁 assets/                  # Imágenes del README
-│   └── (capturas de pantalla)
-│
-└── 📄 README.md                # Este archivo
+└── 📁 img/                                
 ```
 
 ---
