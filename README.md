@@ -52,6 +52,7 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 ![Menú](img/port.jpeg)
 
    •*Gameplay*
+
 ![Gameplay](img/mov.jpeg)
 
 ---
@@ -90,6 +91,7 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 · Godot Engine 4.6
 · GDScript
 · Matemáticas Aplicadas (vectores, MRU, geometría de colisiones)
+· Control de versiones con Git
 
 ---
 
@@ -108,13 +110,13 @@ Esto ocurre porque el ejecutable no está firmado digitalmente.
 
 **📄 Documentación**
 
-· [Apuntes MRU y Dirección Normalizada](Documentacion/ApuntesFormulasMRUyDireccionNormalizada.pdf)
-· [Guia Técnica](Documentacion/Manual_Usuario_BadicoV1.pdf)
+· [Apuntes MRU y Dirección Normalizada](Documentacion/TrabajoFormulasMRUyDireccionNormalizada.pdf)
+· [Guia Técnica](Documentacion/Manual_Tecnico_BasicoV1.pdf)
 
 ---
 **Apuntes**
 
- ->Debido a que en GitHub (Android) no se podía prevualizar el pdf de los apuntes eh puesto las capturas aquí. Si no se ven correctamente descargue el .pdf correspondiente.
+ -> Debido a que en GitHub(Android) no se podía prevualizar el pdf de los apuntes eh puesto las capturas aquí. Si no se ven correctamente descargue el .pdf correspondiente.
 
 ![Apuntes 1raParte](img/apuntes1.png)
 ![Apuntes 2raParte](img/apuntes2.png)
