@@ -47,17 +47,7 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 
 **🖼️ Capturas del Proyecto**
 
-Jugador y Enemigo
-
-assets/jugador-enemigo.png
-
-Sistema de Ataque
-
-assets/ataque.png
-
-Colisiones en acción
-
-assets/colisiones.png
+![Menú] (img/port.jpg)
 
 ---
 
