@@ -62,7 +62,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5u52j")
 }],
-"loop": 0,
+"loop": false,
 "name": &"dead",
 "speed": 5.0
 }, {
@@ -70,7 +70,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5u52j")
 }],
-"loop": 0,
+"loop": false,
 "name": &"dead_2",
 "speed": 5.0
 }, {
@@ -81,7 +81,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6na6x")
 }],
-"loop": 0,
+"loop": false,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -92,7 +92,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gsetv")
 }],
-"loop": 0,
+"loop": false,
 "name": &"run",
 "speed": 5.0
 }]
@@ -317,22 +317,21 @@ autoplay = "default"
 
 [node name="BoxContainer3" type="BoxContainer" parent="." unique_id=1714150038]
 layout_mode = 1
-anchors_preset = 13
+anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
 offset_left = -1202.0
-offset_top = -450.0
 offset_right = 1202.0
-offset_bottom = -698.0
+offset_bottom = 212.0
 grow_horizontal = 2
-grow_vertical = 2
+alignment = 1
 
 [node name="Label" type="Label" parent="BoxContainer3" unique_id=1644966361]
-propagate_maximum_size = true
 layout_mode = 2
 text = "Bienvenido a \"Robot\"🤖"
 label_settings = ExtResource("1_u0hc6")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BoxContainer3" unique_id=1212675808]
 position = Vector2(1394, 721)
@@ -362,12 +361,10 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer4" unique_id=589816753]
 custom_minimum_size = Vector2(1500, 200)
-custom_maximum_size = Vector2(1500, 200)
 layout_mode = 2
 
 [node name="Button" type="Button" parent="BoxContainer4/VBoxContainer" unique_id=1280599979]
 custom_minimum_size = Vector2(1500, 100)
-custom_maximum_size = Vector2(1500, 500)
 layout_mode = 2
 theme = ExtResource("6_6030f")
 theme_type_variation = &"FlatButton"
@@ -391,12 +388,10 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer5" unique_id=545482378]
 custom_minimum_size = Vector2(1500, 200)
-custom_maximum_size = Vector2(1500, 200)
 layout_mode = 2
 
 [node name="Button2" type="Button" parent="BoxContainer5/VBoxContainer" unique_id=880605383]
 custom_minimum_size = Vector2(1500, 100)
-custom_maximum_size = Vector2(1500, 500)
 layout_mode = 2
 theme = ExtResource("6_6030f")
 theme_type_variation = &"FlatButton"

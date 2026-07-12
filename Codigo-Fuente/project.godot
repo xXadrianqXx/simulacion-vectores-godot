@@ -13,7 +13,7 @@ config_version=5
 config/name="Simulación-Vectores"
 config/version="1"
 run/main_scene="uid://81usnler1yt6"
-config/features=PackedStringArray("4.7", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://cu0iiwwnl7ych"
 
 [autoload]
@@ -69,3 +69,4 @@ ataque={
 
 rendering_device/driver.windows="d3d12"
 textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true

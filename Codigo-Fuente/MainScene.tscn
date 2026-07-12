@@ -53,6 +53,7 @@ border_width_right = 4
 border_width_bottom = 4
 border_color = Color(0.25408742, 0.25408742, 0.25408742, 1)
 corner_detail = 20
+expand_margin_left = 72.0
 shadow_color = Color(0, 0, 0, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p5x2j"]
@@ -122,6 +123,7 @@ theme = SubResource("Theme_g7b7a")
 value = 100.0
 
 [node name="Buttons" parent="UI" unique_id=442637463 instance=ExtResource("5_rf2cd")]
+visible = false
 
 [node name="LabelScore" type="Label" parent="UI" unique_id=1770515956]
 anchors_preset = -1
@@ -136,17 +138,18 @@ scale = Vector2(3, 3)
 label_settings = SubResource("LabelSettings_hbc2u")
 
 [node name="Pause" type="Button" parent="UI" unique_id=2009516203]
-custom_minimum_size = Vector2(300, 0)
-custom_maximum_size = Vector2(200, -1)
+custom_minimum_size = Vector2(200, 100)
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -100.0
-offset_top = 15.0
+offset_top = 25.0
 offset_right = 100.0
-offset_bottom = 137.0
+offset_bottom = 136.0
 grow_horizontal = 2
+scale = Vector2(0.5, 0.5)
 theme = SubResource("Theme_torvr")
+theme_type_variation = &"FlatButton"
 text = "||"
 
 [node name="RespawScene" parent="UI" unique_id=1802436639 instance=ExtResource("3_a814b")]
@@ -180,7 +183,6 @@ color = Color(0.27058825, 0, 0.2784314, 0.14509805)
 
 [node name="ColorRect2" type="ColorRect" parent="PausedUI/IU/ColorRect" unique_id=1999171375]
 custom_minimum_size = Vector2(2050, 150)
-custom_maximum_size = Vector2(2050, 1050)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -241,7 +243,6 @@ alignment = 1
 
 [node name="ButtonResume" type="Button" parent="PausedUI/IU/ColorRect/ColorRect/VBoxContainer" unique_id=212061360]
 custom_minimum_size = Vector2(1500, 100)
-custom_maximum_size = Vector2(1500, 500)
 layout_mode = 2
 theme = ExtResource("10_8xkvn")
 theme_type_variation = &"FlatButton"
@@ -251,7 +252,6 @@ text = "Reanuadar"
 
 [node name="ButtonReboot" type="Button" parent="PausedUI/IU/ColorRect/ColorRect/VBoxContainer" unique_id=1669718398]
 custom_minimum_size = Vector2(1500, 100)
-custom_maximum_size = Vector2(1500, 500)
 layout_mode = 2
 theme = ExtResource("10_8xkvn")
 theme_type_variation = &"FlatButton"
@@ -261,7 +261,6 @@ text = "Reiniciar"
 
 [node name="ButtonExitToMainMenu" type="Button" parent="PausedUI/IU/ColorRect/ColorRect/VBoxContainer" unique_id=451515598]
 custom_minimum_size = Vector2(1500, 100)
-custom_maximum_size = Vector2(1500, 500)
 layout_mode = 2
 theme = ExtResource("10_8xkvn")
 theme_type_variation = &"FlatButton"
