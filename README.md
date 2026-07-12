@@ -52,7 +52,7 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 ![Menú](img/port.jpeg)
 
    •*Gameplay*
-![Gameplay](img/movimiento.jpeg)
+![Gameplay](img/mov.jpeg)
 
 ---
 
