@@ -114,7 +114,7 @@ Esto ocurre porque el ejecutable no está firmado digitalmente.
 · [Guia Técnica](Documentacion/Manual_Tecnico_BasicoV1.pdf)
 
 ---
-**Apuntes**
+**📝 Apuntes**
 
  -> Debido a que en GitHub(Android) no se podía prevualizar el pdf de los apuntes eh puesto las capturas aquí. Si no se ven correctamente descargue el .pdf correspondiente.
 
@@ -128,11 +128,11 @@ Esto ocurre porque el ejecutable no está firmado digitalmente.
 
 **👨‍💻 Autor**
 
-Adrián Andrade
-Estudiante de Software 
-📧 adrian7462a@gmail.com
-🔗 LinkedIn(Pendiente)
-🐙 GitHub: xXadrianqXx
+· Adrián Andrade
+· Estudiante de Ingeniería de Software 
+· 📧 adrian7462a@gmail.com
+· 🔗 LinkedIn(Pendiente)
+· 🐙 GitHub: xXadrianqXx
 
 ---
 
