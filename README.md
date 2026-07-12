@@ -47,7 +47,7 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 
 **🖼️ Capturas del Proyecto**
 
-![Menú] (img/port.jpeg)
+![Menú](img/port.jpeg)
 
 ---
 
@@ -103,7 +103,7 @@ Esto ocurre porque el ejecutable no está firmado digitalmente.
 
 **📄 Documentación**
 
-· [Apuntes MRU y Dirección Normalizada](Documentacion/TrabajoFormulasMRUyDirecci%C3%B3nNormalizada.pdf)
+· [Apuntes MRU y Dirección Normalizada](Documentacion/Apuntes.pdf)
 · [Guia Técnica](Documentacion/Manual_UsuarioV1.pdf)
 
 ---
