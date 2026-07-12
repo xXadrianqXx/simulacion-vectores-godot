@@ -116,7 +116,6 @@ chmod +x ProyectoFinalLinuxV1.x86_64
 ./ProyectoFinalLinuxV1.x86_64
 
 ```
- *Nota:* Hay dos APK en Android por el tamaño de pantalla. (Probablemente lo solucione en un futuro.)
 
 ---
 
