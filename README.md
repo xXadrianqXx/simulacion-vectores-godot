@@ -99,6 +99,7 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 
 · Windows (.exe)
 · Android (.apk)
+· [Windows 64bits](https://release-assets.githubusercontent.com/github-production-release-asset/1297202780/fb3903b0-e108-47c0-b717-cbf8a438facc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-07-12T05%3A32%3A49Z&rscd=attachment%3B+filename%3DProyectoFinal.exe.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-07-12T04%3A32%3A49Z&ske=2026-07-12T05%3A32%3A49Z&sks=b&skv=2018-11-09&sig=05V1jmqqkLIiEfQDyNXUg5gDS5PZM%2FKlKLhwY34YazA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4MzgzMjU2OSwibmJmIjoxNzgzODMwNzY5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.gTJZLdQPjpB7tE2tyi9_X7bv5esabfA0NvbqSR7uaoI&response-content-disposition=attachment%3B%20filename%3DProyectoFinal.exe.zip&response-content-type=application%2Foctet-stream)
 ## ⚠️ Advertencia de Windows
 
 Al ejecutar el juego, Windows puede mostrar un mensaje de seguridad. 
