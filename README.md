@@ -47,7 +47,7 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 
 **🖼️ Capturas del Proyecto**
 
-![Menú] (img/port.jpg)
+![Menú] (img/port.jpeg)
 
 ---
 
