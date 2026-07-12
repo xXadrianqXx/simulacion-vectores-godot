@@ -71,7 +71,7 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 │   └── 📁 UI/
 │
 ├── 📁 Documentacion/                       
-│   ├── Manual-TecnicoBasicoV1.pdf                 ← Apuntes (el que tiene las apuntes manuales.)
+│   ├── Manual-Tecnico_BasicoV1.pdf              
 │   └── TrabajoFormulasMRUyDireccionNormalizada.pdf
 │                  
 ├── 📁 Versiones_Anteriores/               
@@ -109,7 +109,7 @@ Esto ocurre porque el ejecutable no está firmado digitalmente.
 
  -Para Windows/Android es simplemente descargar ejecutar/instalar sin embargo para Linux es necesario usar los siguientes comandos.
 
-```
+```bash
 #Dar permisos
 chmod +x ProyectoFinalLinuxV1.x86_64
 #Ejecutar
