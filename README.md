@@ -72,7 +72,8 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 │
 ├── 📁 Documentacion/                       
 │   ├── Manual-TecnicoBasicoV1.pdf                 ← Apuntes (el que tiene las apuntes manuales.)
-│   └── TrabajoFormulasMRUyDireccionNormalizada.pdf                   
+│   └── TrabajoFormulasMRUyDireccionNormalizada.pdf
+│                  
 ├── 📁 Versiones_Anteriores/               
 │   └── 📁 Solo-Movimiento/
 │
@@ -108,13 +109,13 @@ Esto ocurre porque el ejecutable no está firmado digitalmente.
 
  -Para Windows/Android es simplemente descargar ejecutar/instalar sin embargo para Linux es necesario usar los siguientes comandos.
 
-'''
+```
 #Dar permisos
 chmod +x ProyectoFinalLinuxV1.x86_64
 #Ejecutar
 ./ProyectoFinalLinuxV1.x86_64
 
-'''
+```
  *Nota:* Hay dos APK en Android por el tamaño de pantalla. (Probablemente lo solucione en un futuro.)
 
 ---
