@@ -107,7 +107,7 @@ Esto ocurre porque el ejecutable no está firmado digitalmente.
 
 **Instalación**
 
- -Para Windows/Android es simplemente descargar ejecutar/instalar sin embargo para Linux es necesario usar los siguientes comandos.
+ -Para Windows/Android es simplemente descargar ejecutar/instalar sin embargo para Linux es necesario usar los siguientes comandos:
 
 ```bash
 #Dar permisos
