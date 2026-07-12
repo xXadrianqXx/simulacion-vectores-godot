@@ -52,7 +52,7 @@ Este proyecto simula el movimiento de un personaje y un enemigo en un entorno 2D
 ![Menú](img/port.jpeg)
 
    •*Gameplay*
-![Gameplay](img/
+![Gameplay](img/movimiento.jpeg)
 
 ---
 
@@ -108,9 +108,20 @@ Esto ocurre porque el ejecutable no está firmado digitalmente.
 
 **📄 Documentación**
 
-· [Apuntes MRU y Dirección Normalizada](Documentacion/ApuntesFormulasMRUyNormalizacion.pdf)
+· [Apuntes MRU y Dirección Normalizada](Documentacion/ApuntesFormulasMRUyDireccionNormalizada.pdf)
 · [Guia Técnica](Documentacion/Manual_UsuarioV1.pdf)
 
+---
+**Apuntes**
+
+ ->Debido a que en GitHub (Android) no se podía prevualizar el pdf de los apuntes eh puesto las capturas aquí. Si no se ven correctamente descargue el .pdf correspondiente.
+
+![Apuntes 1raParte](img/apuntes1.png)
+![Apuntes 2raParte](img/apuntes2.png)
+![Apuntes 3raParte](img/apuntes3.png)
+![Apuntes 4raParte](img/apuntes4.png)
+![Apuntes 5raParte](img/apuntes5.png)
+![Apuntes 6raParte](img/apuntes6.png)
 ---
 
 **👨‍💻 Autor**
@@ -119,7 +130,7 @@ Adrián Andrade
 Estudiante de Software 
 📧 adrian7462a@gmail.com
 🔗 LinkedIn(Pendiente)
-🐙 GitHub
+🐙 GitHub: xXadrianqXx
 
 ---
 
