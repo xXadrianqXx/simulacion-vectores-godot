@@ -124,6 +124,7 @@ chmod +x ProyectoFinalLinuxV1.x86_64
 · [Apuntes MRU y Dirección Normalizada](Documentacion/TrabajoFormulasMRUyDireccionNormalizada.pdf)
 · [Guia Técnica](Documentacion/Manual_Tecnico_BasicoV1.pdf)
 
+*Nota:*Pueden existir errores ortográficos, sin embargo, no existen errores en los conceptos. Es debido a que era nuevo en onlyOffice, en ese momento recién me estaba adaptando.
 ---
 **📝 Apuntes**
 
